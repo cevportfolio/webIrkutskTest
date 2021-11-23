@@ -3,6 +3,8 @@
     padding: 40px;
     max-width: 1400px;
     margin: 0 auto;
+    padding-left: -20px;
+    border: 1px solid blue;
 }
 
 #content .grid {
@@ -10,6 +12,8 @@
     background: rgba(255, 255, 200, 0.5);
     max-width: 1400px;
     margin: 0 auto;
+    /* padding-left: -20px; */
+    border: 1px solid red;
     
 }
 
@@ -18,10 +22,12 @@
     display: inline-block;
     background: rgba(200, 255, 255, 0.5);
     box-shadow: 0 0 0 3px #000;
+    width: 100%;
     min-width: 250px;
-    max-width: 350px;
+    /* max-width: 350px; */
     min-height: 162.5px;
-    max-height: 187.5px;
+    /* max-height: 187.5px; */
+    /* height: auto; */
     margin: 20px;
 }
 
@@ -46,4 +52,33 @@
     width: 100%;
     height: auto;
     max-width: 500px;
+}
+
+@media only screen and (max-width: 1920px) {
+    #content .item {
+        width: calc(100%/5);
+    }
+}
+
+@media only screen and (max-width: 1600px) {
+    #content .item {
+        width: calc(100%/4);
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    #content .item {
+        width: calc(100%/3);
+    }
+}
+@media only screen and (max-width: 1200px) {
+    #content .item {
+        width: calc(100%/2);
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    #content .item {
+        width: 100%;
+    }
 }
