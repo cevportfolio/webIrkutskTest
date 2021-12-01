@@ -4,7 +4,7 @@ function Get() {
     //в запросе передайте произвольный массив c ключем "arr"
     $.post('../php/get.php', {arr: arr[1, 2, 3], get: true}, function(data) {
     let receivedData = JSON.parse(data);
-    console.log(receivedData);
+    // console.log(receivedData);
   })
 }
 
